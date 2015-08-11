@@ -1,30 +1,64 @@
 <root>
 	<Column1Content>
-		<h2>Media</h2>
 		<style type="text/css" media="screen">
 			.dept-content .main-content .col-md-6 .content-inner, .main-content .col-md-12 .content-inner {
 				padding-right: 4%;
 				padding-left: 4%;
 			}
-			#twitter-widget-0 {
-				width: 100%;
+			.social-icon {
+				padding-left: 5px;
+				padding-right: 5px;
+				text-decoration: none !important;
+			}
+			@media (max-width: 768px) {
+				.main-content .row img {
+			    display: inline-block;
+				}
+			}
+			@media (min-width: 796px) {
+				.social-column-twitter {
+					width: 50%;
+					float: left;
+				}
+				.social-column-fb {
+					float: right;
+				}
 			}
 		</style>
-		<script type="text/javascript" src="/common/js/twitter.js"></script>
-		<script type="text/javascript" src="/common/js/facebook.js"></script>
+		<div class="row">
+			<h2>Media</h2>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12">
+				<h3>Follow us on social media!</h3>
+				<a class="social-icon" target="_blank" href="https://twitter.com/iteam_LongBeach">
+					<img alt="Follow us on Twitter!" src="http://longbeach.gov/uploadedImages/Pages/Departments/Mayor/Media_Library/images/twitter.png" />
+				</a>
+				<a class="social-icon" target="_blank" href="https://www.facebook.com/pages/Long-Beach-i-team/508615459300242">
+					<img alt="Follow us on Facebook!" src="http://longbeach.gov/uploadedImages/Pages/Departments/Mayor/Media_Library/images/facebook.png" />
+				</a>
+				<a class="social-icon" target="_blank" href="https://instagram.com/iteam_lbc/">
+					<img alt="Follow us on Instagram!" src="http://longbeach.gov/uploadedImages/Pages/Departments/Mayor/Media_Library/images/instagram.png" />
+				</a>
+			</div>
+		</div>
 		<div class="row">
 			<a href="&lt;iframe width=&quot;100%&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/JbOO2yUUcyE&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;">
 				<iframe width="100%" height="315" frameborder="0" src="https://www.youtube.com/embed/JbOO2yUUcyE"></iframe>
 			</a>
 		</div>
 		<div class="row">
-			<div class="col-md-6">
-				<a class="twitter-timeline" data-width="100%" data-height="500" data-chrome="noborders" href="https://twitter.com/iteam_LongBeach" data-widget-id="625770792173727744">Tweets by @LongBeachCity</a>
-			</div>
-			<div class="col-md-6">
-				<div data-show-border="false" data-stream="true" data-header="false" data-show-faces="false" data-colorscheme="light" data-height="500" data-width="100%" data-href="https://www.facebook.com/pages/Long-Beach-i-team/508615459300242" class="fb-like-box"></div>
+			<div class="col-sm-12 col-md-12">
+				<div class="social-column-twitter">
+					<a class="twitter-timeline" data-height="500" data-chrome="noborders" href="https://twitter.com/iteam_LongBeach" data-widget-id="625770792173727744">Tweets by @LongBeachCity</a>
+				</div>
+				<div class="social-column-fb">
+					<div data-show-border="false" data-stream="true" data-header="false" data-show-faces="false" data-colorscheme="light" data-height="500" data-width="100%" data-href="https://www.facebook.com/pages/Long-Beach-i-team/508615459300242" class="fb-like-box"></div>
+				</div>
 			</div>
 		</div>
+		<script type="text/javascript" src="/common/js/twitter.js"></script>
+		<script type="text/javascript" src="/common/js/facebook.js"></script>
 	</Column1Content>
 	<Column2Content></Column2Content>
 	<ShowAnnouncements>false</ShowAnnouncements>
