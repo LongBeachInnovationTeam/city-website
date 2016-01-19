@@ -25,7 +25,7 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <h1>Challenges</h1>
+                <h1 class="header">Challenges</h1>
             </div>
         </div>
         <div class="row">
@@ -46,11 +46,12 @@
                         needs and respond to them more effectively?
                     </p>
                     <p class="description-text">
-                        <a href="https://www.planetbids.com/portal/portal.cfm?CompanyID=15810#">View the Request For Information (RFI)</a>
+                        <a class="rfi-link" href="https://www.planetbids.com/portal/portal.cfm?CompanyID=15810#">View the Request For Information (RFI)</a>
                     </p>
                 </div>
             </div>
         </div>
+        <hr />
         <div class="row">
             <div class="col-md-12">
                 <h1 id="challenge-2-background-image" class="padded-multiline challenge-background">
@@ -64,10 +65,12 @@
                     The City of Long Beach and Citymart have launched this challenge to find cutting-edge solutions to foster a culture of innovation and develop a strong ecosystem in the city that supports innovators, entrepreneurs, research and development. The City is seeking knowledge on creative, proven strategies that bring people from all industries and walks of life together to find inspiration, nourish their ideas, find investors, and reach their full potential.
                 </p>
                 <p class="description-text">
-                    <a href="https://www.planetbids.com/portal/portal.cfm?CompanyID=15810#">View the Request For Information (RFI)</a>
+                    <a class="rfi-link" href="https://www.planetbids.com/portal/portal.cfm?CompanyID=15810#">View the Request For Information (RFI)</a>
                 </p>
             </div>
         </div>
+        <hr />
+        <br />
         <div class="row">
             <div class="col-md-12">
                 <p class="description-text">
@@ -76,6 +79,7 @@
                 </p>
             </div>
         </div>
+        <br />
         <div class="row">
             <div class="col-md-12">
                 <div id="citymart-footer">
@@ -87,11 +91,14 @@
 			html body.rvfs-4 p, .body-text {
 		      font-size: 16px !important;
 			}
-            .dept-content .main-content a {
-                font-size: 16px;
+            a.body-link {
+                font-size: 16px !important;
             }
             .main-content img#quote-banner {
                 margin-bottom: 0 !important;
+            }
+            #challenge-header {
+                line-height: 1.5;
             }
             @media (max-width: 768px) {
                 #challenge-header {
@@ -144,6 +151,9 @@
                 font-size: 16px;
                 color: #0A324C;
             }
+            .header {
+                font-weight: 400;
+            }
             #intro {
                 margin-top: 15px;
             }
@@ -162,7 +172,13 @@
                 padding: 0.2rem 0.5rem 0 0.5rem;
                 -webkit-box-decoration-break: clone;
                 box-decoration-break: clone;
+                opacity: 0.9;
+                -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+                filter: alpha(opacity=90);
 			}
+            .rfi-link {
+                font-size: 24px !important;
+            }
 		</style>
     </Column1Content>
     <Column2Content></Column2Content>
