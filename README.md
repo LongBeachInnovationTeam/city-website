@@ -1,4 +1,4 @@
-# Ektron CMS Website Training
+# Ektron CMS Notes
 
 - Global sidebar rolls out to all pages, can be overridden at any time
 	- There is a global field to set this 
